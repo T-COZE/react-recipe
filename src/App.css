@@ -38,6 +38,10 @@ td {
 }
 
 /* table */
+tr:nth-child(odd){
+background-color: #1D263B;
+color:blanchedalmond;
+}
 
 table {
   table-layout: fixed;

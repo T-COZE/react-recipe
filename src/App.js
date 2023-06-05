@@ -20,7 +20,12 @@ function App() {
   
   return (
     <div className="App">
-      <header><h1>Delicious Food Recipes</h1></header>
+      <header><h1 style={
+        { display:"flex",
+         fontSize:"64px",
+         justifyContent:"center",
+         fontFamily:'Playfair Display SC' }
+         }>Delicious Food Recipes</h1></header>
       <RecipeList  recipes ={recipes} deleteRecipe={deleteRecipe} />
       <RecipeCreate addRecipe={addRecipe} />
     </div>
@@ -28,3 +33,5 @@ function App() {
 }
 
 export default App;
+
+

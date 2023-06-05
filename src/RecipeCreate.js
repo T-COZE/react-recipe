@@ -18,9 +18,10 @@ function RecipeCreate({addRecipe}) {
   };
   const handleSubmit = (e) => {
     e.preventDefault()
-    if(!recipe.name || !recipe.cuisine || !recipe.photo || recipe.ingredients || recipe.preparation){
-      return null
-    } 
+    if(!recipe.name || !recipe.cuisine || !recipe.photo || !recipe.ingredients || !recipe.preparation){
+        return null
+    }
+     
     addRecipe(recipe)
     setRecipe({...recipe})
   }
