@@ -23,7 +23,13 @@ function RecipeCreate({addRecipe}) {
     }
      
     addRecipe(recipe)
-    setRecipe({...recipe})
+    setRecipe({
+      name:"",
+      cuisine: "",
+      photo:"",
+      ingredients:"",
+      preparation:"",
+    })
   }
 
   return (
